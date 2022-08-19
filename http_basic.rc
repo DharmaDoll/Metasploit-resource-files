@@ -1,0 +1,12 @@
+workspace -a {{workspace}}
+workspace {{workspace}}
+use auxiliary/scanner/http/http_login
+set USER_FILE user.list
+set PASS_FILE pass.list
+set REQUESTTYPE GET
+set STOP_ON_SUCCESS true
+set RHOSTS localhost
+set BLANK_PASSWORDS true
+set BRUTEFORCE_SPEED 2
+exploit
+quit
